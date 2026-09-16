@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ผลงานของเรา - [ชื่อธุรกิจ]</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .work-container { padding: 5rem 5%; }
+    .work-collage {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .work-item {
+      border: var(--border-width) solid var(--color-black);
+      box-shadow: var(--box-shadow);
+      padding: 2rem;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      transition: 0.2s;
+    }
+    .work-item:hover { transform: translateY(-5px); box-shadow: 10px 10px 0px var(--color-black); }
+    .item-1 { grid-column: span 7; background: var(--pastel-orange); }
+    .item-2 { grid-column: span 5; background: var(--pastel-yellow); }
+    .item-3 { grid-column: span 5; background: var(--pastel-peach); }
+    .item-4 { grid-column: span 7; background: var(--pastel-yellow); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">[ชื่อธุรกิจ]</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="services.html">บริการ</a></li>
+        <li><a href="work.html" class="active">ผลงาน</a></li>
+        <li><a href="process.html">กระบวนการ</a></li>
+        <li><a href="contact.html">ติดต่อเรา</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="work-container">
+    <h2>คลังผลงานความภูมิใจ</h2>
+    <p>รวมโปรเจกต์ที่เราทุ่มเทแรงกายและพลังไอเดียลงไป</p>
+
+    <div class="work-collage">
+      <div class="work-item item-1">
+        <h3>Project Nova</h3>
+        <p>Rebranding & E-commerce Website</p>
+      </div>
+      <div class="work-item item-2">
+        <h3>Project Zephyr</h3>
+        <p>Mobile App UI/UX Design</p>
+      </div>
+      <div class="work-item item-3">
+        <h3>Project Spark</h3>
+        <p>Creative Campaign & Visuals</p>
+      </div>
+      <div class="work-item item-4">
+        <h3>Project Orbit</h3>
+        <p>Immersive Web Experience</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 [ชื่อธุรกิจ]. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[ชื่อธุรกิจ] - Creative & Bold Agency</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      padding: 6rem 5%;
+      align-items: center;
+    }
+    .hero-content h1 span {
+      background: var(--pastel-yellow);
+      padding: 0 0.5rem;
+      border: var(--border-width) solid var(--color-black);
+      display: inline-block;
+      box-shadow: 4px 4px 0px var(--color-black);
+      transform: rotate(-2deg);
+      margin-top: 0.5rem;
+    }
+    .hero-collage {
+      position: relative;
+      height: 450px;
+    }
+    .collage-img {
+      position: absolute;
+      border: var(--border-width) solid var(--color-black);
+      box-shadow: var(--box-shadow);
+      object-fit: cover;
+    }
+    .img-1 { width: 65%; height: 280px; top: 0; left: 0; background: var(--pastel-orange); transform: rotate(-4deg); }
+    .img-2 { width: 55%; height: 250px; bottom: 0; right: 0; background: var(--pastel-yellow); transform: rotate(6deg); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">[ชื่อธุรกิจ]</a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">หน้าแรก</a></li>
+        <li><a href="services.html">บริการ</a></li>
+        <li><a href="work.html">ผลงาน</a></li>
+        <li><a href="process.html">กระบวนการ</a></li>
+        <li><a href="contact.html">ติดต่อเรา</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>สร้างตัวตนให้โดดเด่น <span>ไม่เหมือนใคร</span></h1>
+      <p style="margin: 2rem 0;">เราคือทีมครีเอทีฟผู้ปลุกปั้นแบรนด์ให้มีชีวิตชีวาด้วยดีไซน์สุดจัดจ้าน ทันสมัย และเปี่ยมด้วยพลังสร้างสรรค์</p>
+      <a href="contact.html" class="btn-main">เริ่มโปรเจกต์กันเลย!</a>
+    </div>
+    <div class="hero-collage">
+      <div class="collage-img img-1" style="display:flex; align-items:center; justify-content:center; font-weight:900; font-size:2rem;">CREATIVE</div>
+      <div class="collage-img img-2" style="display:flex; align-items:center; justify-content:center; font-weight:900; font-size:2rem;">BOLD</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 [ชื่อธุรกิจ]. All Rights Reserved. Playful & Professional.</p>
+  </footer>
+
+</body>
+</html>

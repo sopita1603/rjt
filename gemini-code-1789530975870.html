@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อเรา - [ชื่อธุรกิจ]</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-container {
+      padding: 5rem 5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      background: var(--pastel-yellow);
+      border: var(--border-width) solid var(--color-black);
+      box-shadow: var(--box-shadow);
+      padding: 3rem;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 1rem;
+      font-family: 'Prompt', sans-serif;
+      font-size: 1rem;
+      border: var(--border-width) solid var(--color-black);
+      outline: none;
+      background: var(--bg-cream);
+    }
+    .contact-form input:focus, .contact-form textarea:focus {
+      background: #fff;
+      box-shadow: 3px 3px 0px var(--color-black);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">[ชื่อธุรกิจ]</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="services.html">บริการ</a></li>
+        <li><a href="work.html">ผลงาน</a></li>
+        <li><a href="process.html">กระบวนการ</a></li>
+        <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contact-container">
+    <div>
+      <h1>มาสร้างความยิ่งใหญ่ <span>ด้วยกันเถอะ!</span></h1>
+      <p style="margin-top: 1.5rem;">มีโปรเจกต์ในใจ หรืออยากปรึกษาเราเรื่องดีไซน์และเว็บไซต์ ทักหาเราได้เลย ทีมงานพร้อมลุยเสมอ!</p>
+      <p style="margin-top: 1rem; font-weight: 800;">📧 Email: hello@yourbusiness.com</p>
+      <p style="font-weight: 800;">📞 Tel: 089-XXX-XXXX</p>
+    </div>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('ส่งข้อความสำเร็จ!');">
+      <h3>ส่งข้อความหาเรา</h3>
+      <input type="text" placeholder="ชื่อของคุณ" required>
+      <input type="email" placeholder="อีเมลของคุณ" required>
+      <textarea rows="4" placeholder="รายละเอียดโปรเจกต์..." required></textarea>
+      <button type="submit" class="btn-main" style="cursor: pointer; text-align: center;">ส่งข้อมูลเลย!</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 [ชื่อธุรกิจ]. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

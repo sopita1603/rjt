@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>กระบวนการทำงาน - [ชื่อธุรกิจ]</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .process-container { padding: 5rem 5%; }
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .step-box {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: var(--bg-cream);
+      border: var(--border-width) solid var(--color-black);
+      box-shadow: var(--box-shadow);
+      padding: 2rem;
+    }
+    .step-num {
+      font-size: 3rem;
+      font-weight: 900;
+      background: var(--pastel-yellow);
+      padding: 1rem 1.5rem;
+      border: var(--border-width) solid var(--color-black);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">[ชื่อธุรกิจ]</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="services.html">บริการ</a></li>
+        <li><a href="work.html">ผลงาน</a></li>
+        <li><a href="process.html" class="active">กระบวนการ</a></li>
+        <li><a href="contact.html">ติดต่อเรา</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="process-container">
+    <h2>ขั้นตอนการทำงานของเรา</h2>
+    <p>เรียบง่าย ชัดเจน และสนุกไปพร้อมกันในทุกย่างก้าว</p>
+
+    <div class="steps-list">
+      <div class="step-box" style="background-color: var(--pastel-peach);">
+        <div class="step-num">01</div>
+        <div>
+          <h3>Talk & Discover</h3>
+          <p>พูดคุย วิเคราะห์เป้าหมาย และแก่นแท้ของแบรนด์คุณ</p>
+        </div>
+      </div>
+      <div class="step-box" style="background-color: var(--pastel-yellow);">
+        <div class="step-num">02</div>
+        <div>
+          <h3>Brainstorm & Design</h3>
+          <p>ระเบิดไอเดียสร้างสรรค์ ร่างโครงสร้าง และดีไซน์หน้าตาที่สะดุดตา</p>
+        </div>
+      </div>
+      <div class="step-box" style="background-color: var(--pastel-orange);">
+        <div class="step-num">03</div>
+        <div>
+          <h3>Develop & Launch</h3>
+          <p>เขียนโค้ดเนี๊ยบๆ ใส่แอนิเมชันมีชีวิตชีวา แล้วเปิดตัวสู่สายตาชาวโลก!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 [ชื่อธุรกิจ]. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
